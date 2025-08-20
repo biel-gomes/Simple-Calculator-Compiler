@@ -1,0 +1,13 @@
+# Gramática
+
+Entrada    -> Comando | Expressao
+
+Comando    -> Atribuicao | Leitura | Escrita
+
+Atribuicao -> ID := Expressao
+Leitura    -> leia( ID )
+Escrita    -> escreva( STRING | ID )
+
+Expressao  -> Termo ( (SOMA | SUBTRACAO) Termo )*
+Termo      -> Fator ( (MULT | DIV) Fator )*
+Fator      -> NUMERO | ID | ( Expressao )

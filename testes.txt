@@ -1,0 +1,86 @@
+# Teste 1.1: Soma
+>> 11 + 5
+--
+16.0
+====
+# Teste 1.2: Subtração com Decimais
+>> 20.5 - 5.5
+--
+15.0
+====
+# Teste 2.1: Precedência
+>> 2 + 3 * 4
+--
+14.0
+====
+# Teste 2.2: Precedência
+>> 20 - 10 / 2
+--
+15.0
+====
+# Teste 3.1: Parênteses
+>> (2 + 3) * 4
+--
+20.0
+====
+# Teste 3.2: Parênteses Aninhados
+>> 100 / (2 * (20 + 5))
+--
+2.0
+====
+# Teste 4.1: Atribuição e Uso de Variável
+>> x := 25
+>> x / 5
+--
+5.0
+====
+# Teste 4.2: Reatribuição
+>> x := 10
+>> x := x + 5
+>> x
+--
+15.0
+====
+# Teste 5.1: Comando 'escreva'
+>> escreva("Olá, Mundo!")
+--
+Olá, Mundo!
+====
+# Teste 5.2: Comando 'leia'
+>> escreva("Digite um número: ")
+>> leia(numero)
+<< 42
+>> escreva("O dobro é: ")
+>> numero * 2
+--
+Digite um número: O dobro é: 84.0
+====
+# Teste 6.1: Erro de Divisão por Zero
+>> 10 / 0
+--
+ERRO: Divisão por zero.
+====
+# Teste 6.2: Erro de Variável não Definida
+>> y + 5
+--
+ERRO: A variável 'y' não foi definida.
+====
+# Teste 6.3: Erro de Sintaxe
+>> 5 5
+--
+Erro de Sintaxe: Token inesperado '5.0' após uma expressão válida.
+====
+# Teste 6.4: Erro de Sintaxe (Operador extra)
+>> 10 + 5 +
+--
+Erro de Sintaxe: Expressão incompleta. Esperado um número, variável ou parêntese, mas encontrou 'EOF'.
+====
+# Teste 7.1: Mini Programa de Média
+>> n1 := 8
+>> n2 := 9.5
+>> media := (n1 + n2) / 2
+>> escreva("Média: ")
+>> escreva(media)
+--
+Média: 8.75
+====
